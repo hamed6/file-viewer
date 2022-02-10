@@ -1,0 +1,6 @@
+{   
+    // v 6.x :
+    // "presets": ["env"]
+    // v 7.x :
+    "presets": ["@babel/preset-env"]
+}

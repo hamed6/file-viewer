@@ -1,0 +1,100 @@
+/* ---------------------------------------------------------------------- */
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 10% 80% 10%;
+  
+  /* background-color: #2196F3; */
+  /* padding: 1px; */
+}
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  font-size: 12px;
+  /* padding: 1px; */
+  /* text-align: center; */
+}
+
+
+.mcgbackground{
+  background: url("../../assets/img/bcgcontainership.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  /* background-size:cover; */
+}
+
+
+/* #two,#three,#seven,#eight,#nine{
+  background-color: white;
+} */
+
+
+#one{
+background: url("../../assets/img/Macgregor_logo.png");
+background-repeat: no-repeat;
+background-size: contain;
+margin: 2% 0 0 2%;
+}
+
+
+.form-group{
+  padding: 5px;
+  text-align: center;
+  display: block;
+  /* width: 20%; */
+}
+form{
+  background-color: whitesmoke;
+  margin-left: 35%;
+  margin-right:35%;
+  margin-top:20%;
+  /* width:20%; */
+  border-radius: 15px;
+  opacity: 0.9;
+  /* margin:35%; */
+}
+
+#eight{
+  font-size: 13px;
+  padding: 4px;
+  text-align: center;
+}
+
+
+/* --------------------------- */
+
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 20% 80% 0%;
+    grid-template-rows: 20% 60% 20%;
+    
+    /* background-color: #2196F3; */
+    /* padding: 1px; */
+  }
+  
+  body {
+    /* background-color: lightblue; */
+  }
+form{
+  width:80%;
+  margin-left:0%;
+  align-items: center;
+  /* filter:none; */
+}
+
+.form-group{
+  
+  padding: 5px;
+  /* width: 20%; */
+  
+  text-align: center;
+  /* display: inline; */
+}
+#one{
+  width:100%;
+}
+}

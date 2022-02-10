@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  /*---------------------------------------*/
+  /*desktop*/
+  .col-1 {width: 20%;}
+  .col-2 {width: 5%;}
+  .col-3 {width: 70%;  }
+  .col-4 {width: 5%;}
+  /* .col-5 {width:100% ;} */
+  
+.col-3#pdfframe{
+  height: 900px;
+}
+
+iframe {
+  width:100%;
+  height: 900px;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+}
+
+  
+  [class*="col-"] {
+    float: left;
+    padding: 1px;
+    /*border: 1px solid red;*/
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+/*---------------------------------------*/
+
+  @media only screen and (max-width: 800px) {
+    body {
+      /* background:url("../../assets/img/CSAcover.jpg"); */
+      background-color: lightblue;
+    }
+    [class*="col-"]{
+        float: left;
+        width: 100%;
+    }
+    /* .col-1{ width: 50%;} */
+    /* .col-3{width: 100%;} */
+  }
+
+  /*---------------------------------------*/
+  
+
+  
+  body{
+
+    background:url("../../assets/img/mainbackimg.jpg");
+    background-size: 100% 80%;
+    
+    
+    
+        /* margin-top: 80px; */
+    /* border-radius: 0px;  */
+    
+      
+    /* Full height */
+    /* height: 90%;  */
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+  }
+
+  
+#mainmenu{
+    margin: 20% 20px 0px 10px;
+    background-color:white;
+    padding: 5px 10px 5px 10px; 
+    border-radius: 2px;
+
+    /* opacity: .9; */
+    /* margin-top: 125px; */
+    /* position: absolute; */
+      }
+#mainmenu p{
+  font-size: 24px;
+  margin: 0px;
+}
+#mainmenu td{
+  padding:2px;
+  /* margin-right: 2px; */
+  /* border: 1px solid #ddd; */
+}
+
+  /* #liststyle{
+    list-style-type: square;
+    color: red;
+  } */
+
+  #epdf1, #epdf2 , #eapp1, #eapp2 , #cer, #oi,#osp{
+    display:none;
+
+  }
+
+#csm.one{
+  list-style-image: url("../../assets/img/listitemcsa.jpg");
+  font-size: 14px;
+}
+#csa.two{
+  list-style-image: url("../../assets/img/listitemcsm.jpg");
+  font-size: 14px;
+}
+#csa.approval {
+  
+  list-style-image: url("../../assets/img/listitemLetterRed.jpg");
+  font-size: 14px;
+  color:grey;
+  /* padding-right: 10px; */
+} 
+
+#csm.approval {
+  list-style-image: url("../../assets/img/listitemLetterBlue.jpg");
+  font-size: 14px;
+  /* color:darkslategrey; */
+  color:grey; 
+}
+
+#listsymbol.other{
+  list-style-image: url("../../assets/img/listitemothers.jpg");
+  font-size: 14px;
+  color:darkslategrey;
+  padding:5px 0 0 0;
+}
+
+.mat-toolbar {
+  background: white;
+  color: #fff;
+  margin: 15px 0 0 0;
+}
+
+/* #showpdf{
+  margin-top: 10px;
+} */
+
+p{
+  color: black;
+  /* padding: 0px; */
+  
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  
+}
+
+
+
+#contact{
+  color: black;
+  position: absolute;
+  margin-top: 40px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: lavender;
+  font-size: 13px;
+  padding: 4px;
+  text-align: center;
+  /* text-indent: 10px; */
+  /* width: 50%; */
+  /* bottom: 10px; */
+  /* top: 50%; */
+}
+
+p#contact{
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  /* padding: 2px; */
+  /* margin: 2px; */
+}
+#contact a{
+  text-decoration: none;
+  color: blue;
+  /* text-decoration-color: blue; */
+}
+
+#reglogo{
+  background-image:url("../../assets/img/Macgregor_logo.png") ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 5px;
+
+}
+
+li:hover{
+  cursor: pointer;
+  background-color:lavender;
+}
+
+
+
+li#csm{
+margin-top: 20px;
+}
+
+#readme{
+  list-style-image: url("../../assets/img/listitemreadMe.jpg");
+  font-size: 14px;
+  color:grey; 
+}

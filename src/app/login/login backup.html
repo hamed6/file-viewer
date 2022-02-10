@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <mat-toolbar id="reglogo">
+
+    <!-- <span><img src="../../assets/img/MacGregor_RGB_150dpi.jpg"></span> -->
+  </mat-toolbar>
+
+  <div class="mainbody">
+
+    <mat-grid-list cols="3" rowHeight="2:1">
+
+      <mat-grid-tile id="1"></mat-grid-tile>
+      <mat-grid-tile id="2"></mat-grid-tile>
+      <mat-grid-tile id="3"></mat-grid-tile>
+      <mat-grid-tile id="4"></mat-grid-tile>
+      <mat-grid-tile id="5">
+        <!-- <mat-card id="5"> -->
+        <form #loginform="ngForm" (ngSubmit)="loginUser(loginform)" class="example-form">
+
+          <mat-form-field class="full-width">
+            <input matInput name="imo" placeholder="Username (IMO)" type="text" ngModel required>
+          </mat-form-field>
+
+          <mat-form-field class="full-width">
+            <input matInput name="password" placeholder="Password" type="password" ngModel required>
+          </mat-form-field>
+          <button mat-raised-button color="black" type="submit">Login</button>
+
+          <!-- <div *ngIf="postnumber.length>5 ;else elseblock">
+          <p *ngFor="let number of postnumber">
+            {{ number }}
+          </p>
+        </div>
+        <p class="mat-body-1">
+          <ng-template #elseblock>There is nothing to show!</ng-template>
+        </p> -->
+          <!-- <div *ngIf="err" class="alert alert-danger">{{err}}</div>
+        <div>
+         {{err}}
+        </div> -->
+        </form>
+        <!-- </mat-card> -->
+      </mat-grid-tile>
+      <mat-grid-tile id="6"> </mat-grid-tile>
+      <mat-grid-tile id="7"></mat-grid-tile>
+      <mat-grid-tile id="8">
+
+
+      </mat-grid-tile>
+      <mat-grid-tile id="9"></mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div>
+
+    <p id="contact">
+
+      <!-- <strong style="color: red"> Contact information:</strong> -->
+      <br>
+
+      If you have any questions related to documents, please contact: lashingsalesorder@macgregor.com
+
+      <br>
+      Alternatively contact your nearest MacGregor Marine Service Office:
+      <a href="https://www.macgregor.com/" style=" color: black"> www.macgregor.com </a>
+
+    </p>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- <mat-toolbar id="reglogo">
+  </mat-toolbar> -->
+  <div class="grid-container">
+
+    <div class="grid-item"id ="one"> </div>
+    <div class="grid-item" id="two"></div>
+    <div class="grid-item" id="three"></div>
+    
+      <div class="grid-item mcgbackground" id="four"></div>
+      <div class="grid-item mcgbackground" id="five">
+        <form #loginform="ngForm" (ngSubmit)="loginUser(loginform)">
+          <div class="form-group">
+              <mat-form-field>
+                  <input matInput name="username" placeholder="Username" type="text" ngModel required>
+                </mat-form-field>
+            <mat-form-field>
+              <input matInput name="imo" placeholder="IMO" type="text" ngModel required>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field>
+              <input matInput name="password" placeholder="Password" type="password" ngModel required>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <button mat-raised-button color="black" type="submit">Login</button>
+          </div>
+        </form>
+        <!-- <form #loginform="ngForm" (ngSubmit)="loginUser(loginform)">
+
+            <mat-form-field>
+              <input matInput name="imo" placeholder="Username (IMO)" type="text" ngModel required>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput name="password" placeholder="Password" type="password" ngModel required>
+            </mat-form-field>
+            <button mat-raised-button color="black" type="submit">Login</button>
+
+          </form> -->
+      </div>
+      <div class="grid-item mcgbackground" id="six"></div>
+    
+    <div class="grid-item" id="seven">  </div>
+    
+    <div class="grid-item" id="eight">
+      <!-- 
+      If you have any questions related to documents, please contact: lashingsalesorder@macgregor.com
+      <br>
+      Alternatively contact your nearest MacGregor Marine Service Office:
+      <a href="https://www.macgregor.com/" style=" color: black"> www.macgregor.com </a> -->
+
+
+      If you have any questions related to documents, please contact:
+      <a href="mailto:lashingsalesorder@macgregor.com?Subject=Spare Parts inquiry-DCSM"
+        target="_blank">lashingsalesorder@macgregor.com</a> <br>
+      Alternatively contact your nearest MacGregor Marine Service Office: <a href="https://www.macgregor.com"
+        target="_blank"> www.macgregor.com</a>
+
+    </div>
+    <div class="grid-item" id="nine"></div>
+
+
+
+
+
+  </div>
+</body>
+
+</html>

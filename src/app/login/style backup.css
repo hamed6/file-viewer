@@ -1,0 +1,68 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;  
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+
+  mat-card{
+    /* width: 25%; */
+    /* margin: auto; */
+    /* position: absolute; */
+    background-color: whitesmoke;
+  }
+  
+  .mainbody{
+    /* margin: auto; */
+    background-image: url("../../assets/img/bcgcontainership.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    /* width: 85%; */
+    /* height: 750px; */
+    height:75%;
+    margin: 5px 0 0 0;
+    
+  }
+
+  mat-grid-tile {
+    /* background: lightblue; */
+    
+  }
+
+
+  #reglogo{
+    background-image:url("../../assets/img/Macgregor_logo.png") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 5px;
+
+  }
+
+  #contact{
+    
+    /* width: 50%; */
+    /* bottom: 10px; */
+    color: black;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+p#contact{
+    color: black;
+    /* padding: 2px; */
+    /* margin: 2px; */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .mat-toolbar {
+    background: white;
+    color: #fff;
+    margin: 15px 0 0 0;
+  }

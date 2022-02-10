@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Manuals</title>
+	<base href="/cargosecure">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body >
+
+	<div class="grid-container">
+
+		<div class="logo" >
+			<a href="https://www.macgregor.com" target="_blank">
+				<img src="../../assets/img/Macgregor_logo.png" class="logo">
+			</a>
+			
+		</div>
+
+		<div class="eitem"></div>
+		<div class="mcgbackground">
+			<table class="mainmenu">
+				<tr>
+					<td>
+						<p><strong>{{sharedUN}}</strong> </p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							{{sharedImoTemp}}
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td (click)="onClickFileOne()">
+						<li id="listitem1"class="one">
+							Cargo Securing Manual
+						</li>
+					</td>
+					<td (click)="onClickFileTwo()">
+						<li id="listitem2" class="approval">
+							Letter
+						</li>
+					</td>
+				</tr>
+
+				<tr>
+					<td (click)="onClickFileThree()">
+						<li id="listitem3" class="two">
+							Container Securing Arrangement
+						</li>
+					</td>
+					<td (click)="onClickFileFour()">
+						<li id="listitem4" class="approval">
+							Letter
+						</li>
+					</td>
+
+				</tr>
+				<mat-divider></mat-divider>
+				<tr>
+
+					<td (click)="onClickFileFive()">
+						<li id="listitem5" class="other">
+							Booklet
+						</li>
+					</td>
+
+				</tr>
+				<tr>
+
+					<td (click)="onClickFileSix()">
+						<li id="listitem6" class="other">
+							Lashmate user instructions
+						</li>
+					</td>
+
+				</tr>
+				<tr>
+
+					<td (click)="onClickFileSeven()">
+						<li id="listitem7" class="other">
+							Lashmate guide for master
+						</li>
+					</td>
+
+				</tr>
+				<tr>
+
+					<td (click)="onClickFileEight()">
+						<li id="listitem8" class="other">
+							Certificates
+						</li>
+					</td>
+
+				</tr>
+				<tr>
+
+					<td (click)="onClickFileNine()">
+						<li id="listitem9" class="other">
+							Operating and maintenance instructions 
+						</li>
+					</td>
+
+				</tr>
+				<tr>
+
+					<td (click)="onClickFileTen()">
+						<li id="listitem10" class="other">
+							Other drawings
+						</li>
+					</td>
+
+				</tr>
+				<tr>
+
+					<td (click)="onClickFileEleven()">
+						<li id="listitem11" class="other">
+							Order spare parts
+						</li>
+					</td>
+
+				</tr>
+				
+				
+				
+				
+				
+				<!-- ////////////////////////////////OLD///////////////////////////// -->
+				
+				<!-- <tr>
+					<td (click)="oncilckcsm()">
+						<li id="csm" class="one">
+							Cargo Securing Manual
+
+						</li>
+					</td>
+
+					<td (click)="oncilckcsmapproval1()">
+						<li id="csm" class="approval">Letter</li>
+					</td>
+				</tr>
+				<tr>
+					<td (click)="oncilckcsa()">
+						<li id="csa" class="two">
+							Container Securing Arrangement
+						</li>
+
+					</td>
+					<td (click)="oncilckcsaapproval2()">
+						
+						<li id="csa" class="approval">Letter</li>
+					</td>
+				</tr>
+				<mat-divider></mat-divider>
+				<tr>
+
+					<td (click)="onclickcer()">
+						<li id="listsymbol" class="other">
+							Certificates
+						</li>
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td (click)="oncilckoi()">
+						<li id="listsymbol" class="other">
+							Operating instructions
+						</li>
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td (click)="onclickosp()">
+						<li id="listsymbol" class="other">
+							Order spare parts
+						</li>
+					</td>
+
+				</tr> -->
+				<mat-divider></mat-divider>
+				<tr id="ziplocation">
+					<td (click)="generalInfo()">
+						<li class="readme">Read me</li>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+
+		<!-- #order are fixe -->
+		<div class="mcgbackground">
+			
+			<section >
+				
+					
+			</section>
+			<!-- <div class=""> -->
+
+			<!-- <iframe id="epdf1" *ngIf="!src"></iframe>  -->
+			
+			<!-- <a href="../../../manualDirectory/system.pdf">THIS is first file</a>
+			<a href="../../../../../secondManualDirectory/systemTwo.pdf">ttis is second file</a>
+			<a href="/root/secondManualDirectory/systemTwo.pdf">this is third test</a> -->
+			
+			<iframe id="fileloc1"></iframe> 
+			<iframe id="fileloc2"></iframe> 
+			<iframe id="fileloc3"></iframe>
+			<iframe id="fileloc4"></iframe>
+			<iframe id="fileloc5"></iframe>
+			<iframe id="fileloc6"></iframe>
+			<iframe id="fileloc7"></iframe>
+			<iframe id="fileloc8"></iframe>
+			<iframe id="fileloc9"></iframe>
+			<iframe id="fileloc10"></iframe>
+			<iframe id="fileloc11"></iframe> 
+
+
+		</div>
+
+		<div class="eitem">
+			<button mat-raised-button type="button" (click)="logOut()">Log out</button>
+		</div>
+
+		<div class="footer">
+			<p>
+				If you have any questions related to documents, please contact:
+				<a href="mailto:lashingsalesorder@macgregor.com?Subject=Spare Parts inquiry-DCSM"
+					target="_blank">lashingsalesorder@macgregor.com</a> <br>
+				Alternatively contact your nearest MacGregor Marine Service Office: <a href="https://www.macgregor.com"
+					target="_blank"> www.macgregor.com</a>
+			</p>
+		</div>
+
+
+	</div>
+
+</body>

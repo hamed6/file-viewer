@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 20% 80% ;
+    /* grid-template-rows: 10% 80% 10%; */
+  }
+  .grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    /* padding: 1px; */
+    /* text-align: center; */
+  }
+  
+
+  .mcgbackground{
+      background:url("../../assets/img/mainbackimg.jpg");
+      background-attachment: fixed;
+      background-position: contain;
+      background-repeat: no-repeat;
+  }
+
+  .logo{
+    background: url("../../assets/img/Macgregor_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2% 0 0 2%;
+    }
+    
+
+.footer{
+    font-size: 13px;
+    padding: 4px;
+    text-align: center;
+}
+
+.content{
+    margin:40%
+}
+
+
+/* --------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}

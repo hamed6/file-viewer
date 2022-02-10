@@ -1,0 +1,72 @@
+<div class="mainbody"> 
+  <mat-grid-list cols="3" rowHeight="2:1">
+  
+    <mat-grid-tile id="reglogo"></mat-grid-tile>
+    <mat-grid-tile id="2"></mat-grid-tile>
+    <mat-grid-tile id="3"></mat-grid-tile>
+    <mat-grid-tile id="4"></mat-grid-tile>
+    <mat-grid-tile id="5">
+        
+      <mat-card>
+        
+          <!-- <div class="container"> -->
+              <!-- <div class="logo">Create a new account!</div> -->
+              <!-- <div class="register-item"> -->
+                <!-- //"form form-register" -->
+                <form #myform="ngForm" (ngSubmit)="registerUser(myform)" class="example-form" >
+            
+                  <!-- <div class="form-field"> -->
+                      <mat-form-field class="full-width">
+                        <!-- <label class="user" for="register-username"><span class="hidden">imo</span></label> -->
+                        <input matInput  name="imo" id="register-username" type="text" class="form-input" placeholder="IMO" ngModel required >                        
+                      </mat-form-field>
+                  <!-- </div> -->
+                  <!-- <div class="form-field"> -->
+                    <mat-form-field class="full-width">
+                        <!-- <label class="user" for="register-email"><span class="hidden">Email</span></label> -->
+                        <input matInput name="email" id="register-email" type="email" class="form-input" placeholder="E-mail" ngModel required>  
+                    </mat-form-field>
+                  <!-- </div> -->
+            
+                  <!-- <div class="form-field"> -->
+                      <mat-form-field class="full-width">
+                    <!-- <label class="lock" for="register-password"><span class="hidden">Password</span></label> -->
+                    <input matInput name="password" id="register-password" type="password" class="form-input" placeholder="Password" ngModel required>
+                      </mat-form-field>
+                    <!-- </div> -->
+                  
+                  <!-- <div class="form-field"> -->
+                    <button mat-raised-button color="black" type="submit" value="Register">Register</button>
+                  <!-- </div> -->
+                </form>
+              <!-- </div> -->
+            <!-- </div> -->
+
+       
+      </mat-card>
+      
+    </mat-grid-tile>
+    <mat-grid-tile id="6"></mat-grid-tile>
+    <mat-grid-tile id="7"></mat-grid-tile>
+    <mat-grid-tile id="8">
+      
+
+      
+        <p id="contact" >
+            
+            <!-- <strong style="color: red"> Contact information:</strong> -->
+            <br>
+            
+        If you have any questions related to documents, please contact: lashingsalesorder@macgregor.com
+        
+          <br>  
+            Alternatively contact your nearest MacGregor Marine Service Office: 
+            <a href="https://www.macgregor.com/" style=" color: black"> www.macgregor.com </a> 
+          
+          </p>
+        
+
+    </mat-grid-tile>
+    <mat-grid-tile id="9"></mat-grid-tile>
+  </mat-grid-list>
+  </div>

@@ -1,0 +1,235 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------Media size------------------------ */
+/* --------------------------- */
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 20% 80% ;
+  grid-template-rows: 10% 80% 10%;
+  
+  /* grid-template-areas: "logo eitem", "mainmenu content", "eitem footer"; */
+}
+  
+
+
+.grid-item, .eitem {
+
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* background-position: contain; */
+  /* font-size: 12px; */
+  /* padding: 1px; */
+  /* text-align: center; */
+}
+
+
+
+.mcgbackground{
+  background:url("../../assets/img/mainbackimg.jpg");
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: 100% 70%;
+  /* background-position:50% 50%; */
+  background-position: center;
+  /* object-fit:fill; */
+  
+  /* margin: 5% 0 5% 0; */
+  /* background:url("../../assets/img/mainbackimg.jpg"); */
+  
+}
+
+
+.mainmenu{
+  /* float:left; */
+  background-color: white;
+  margin:50% 0 0 1%;
+  width: 100%;
+  /* display: inline-block; */
+  /* width:250px; */
+  /* position: static; */
+  border-radius: 2px;
+  padding :0 0 0 2px;
+  font-size: 16px;
+  float: left;
+}
+
+/* td:empty{
+  display: none;
+} */
+
+li.one , li.two, li.other, .approval, .readme, a{
+  font-size: 12px;
+  /* margin:1%; */
+  padding:1%;
+}
+
+.logo{
+  /* background: url("../../assets/img/Macgregor_logo.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2% 0 0 2%;
+  width: 76%;
+  /* margin: 2% 0 0 2%;  */
+  }
+  
+
+.footer{
+  font-size: 13px;
+  padding: 4px;
+  text-align: center;
+  position: static;
+}
+
+/* -----------Logout------------ */
+.eitem{
+  
+  padding-left: 1%;
+  font-size: 10px;
+}
+
+/* -----------PDF------- */
+
+
+iframe {
+  width:90%;
+  height: 100%;
+  align-content: center;
+  margin-left: 5%;
+  box-shadow:1px 1px grey ;
+  /* margin-top: 5%;; */
+  /* margin-bottom: 10px; */
+}
+
+.newFile{
+  width:90%;
+}
+/* #showme{
+  width:90%;
+  height: 100%;
+} */
+/* ------------List------- */
+
+#listitem1.one{
+  list-style-image: url("../../assets/img/listitemcsa.jpg");
+  
+}
+#listitem3.two{
+  list-style-image: url("../../assets/img/listitemcsm.jpg");
+  
+}
+#listitem4.approval {
+  list-style-image: url("../../assets/img/listitemLetterRed.jpg");
+  color:grey; 
+} 
+
+#listitem2.approval {
+  list-style-image: url("../../assets/img/listitemLetterBlue.jpg");
+  color:grey; 
+}
+
+.other {
+  list-style-image: url("../../assets/img/listitemothers.jpg");
+  color:darkslategrey;
+  padding:5px 0 0 0;
+}
+
+li:hover{
+  cursor: pointer;
+  background-color:lavender;
+}
+
+li#listitem1, li#listitem2{
+  margin-top: 20px;
+  }
+
+  /* --------Read me-----   */
+.readme{
+    list-style-image: url("../../assets/img/listitemreadMe.jpg");
+    font-size: 12px;
+    color:grey; 
+    padding-bottom: 4px;;
+  }
+
+
+/* -------------------------- */
+
+@media screen and (max-width: 1250px) {
+  .grid-container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    /* grid-template-rows: 10% 20% 60% 10%; */
+    grid-template-rows: 10% 0% 30% 50% 0% 10% ;
+    /* background-color: blue; */
+  }
+  .grid-item{
+    /* margin:0 0 5% 0; */
+    /* border:1px solid black; */
+  }
+
+  .logo{
+    margin:0%;
+    padding: 0%;
+    width: 50%;
+    height: auto;
+    float: left;
+    
+  }
+
+   .mainmenu{
+    width: 50%;
+    font-size: 12px;
+    background-color: mintcream;
+    margin:auto;
+    /* width: 90%; */
+    /* height: 100%; */
+    
+    /* align-items: center; */
+    /* margin: 10% 2% 0 2%; */
+    /* padding: 2%; */
+  }
+
+table.mainmenu {
+  /* table-layout:fixed; */
+  float: left;
+  width:100%;
+}
+
+  li.one , li.two, li.other, .approval{
+    font-size: 12px;
+    /* margin:1%; */
+    padding:1%;
+  }
+  iframe {
+    width:90%;
+    height: 90%;
+    margin:auto;
+    /* align-content: center; */
+    /* margin-left: 5%;; */
+    /* margin-top: 5%;; */
+    /* margin-bottom: 10px; */
+  } 
+
+  .mcgbackground{
+    background:none;
+    /* background-color: teal; */
+    
+    /* background-color: burlywood; */
+    /* background-attachment: fixed; */
+    /* background-repeat:no-repeat; */
+    /* background-size: 100% 70%; */
+    /* background-position:50% 50%; */
+    
+    /* margin: 5% 0 5% 0; */
+    /* background:url("../../assets/img/mainbackimg.jpg"); */
+    
+  }
+  .mcgbackground > iframe{
+    margin-top:10%;
+  }
+  
+  }

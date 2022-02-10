@@ -1,0 +1,59 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;  
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+
+  mat-card{
+    /* width: 25%; */
+    /* margin: auto; */
+    /* position: absolute; */
+    background-color: whitesmoke;
+    
+  }
+  
+  .mainbody{
+    /* margin: auto; */
+    background-image: url("../../assets/img/CSAcover.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:contain;
+    height:90%;
+    
+    margin: 5px 5px 5px 5px;
+
+    
+  }
+
+  mat-grid-tile {
+    /* background: lightblue; */ 
+  }
+
+  p{
+    color: black;
+    /* padding: 2px; */
+    /* margin: 2px; */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  mark{
+    /* background-color: lightgray; */
+    /* color: black; */
+  }
+  
+  #contact{
+    position: absolute;
+    /* width: 50%; */
+    bottom: 10px;
+    color: black;
+  }
+
+  #reglogo{
+    background-image:url("../../assets/img/mcgLogo2.jpg") ;
+    background-repeat: no-repeat;
+  }

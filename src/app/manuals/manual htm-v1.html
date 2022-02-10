@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Manuals</title>
+	<base href="/cargosecure">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+	<div class="grid-container">
+
+		<div class="col-1">
+
+			<a href="https://www.macgregor.com" target="_blank">
+				<img src="../../assets/img/Macgregor_logo.png" alt="" width="300px" style="margin: 4px 0 0 10px;">
+			</a>
+
+			<table id="mainmenu">
+
+				<tr>
+					<td>
+						<p><strong>MSC MINA</strong> </p>
+					</td>
+					<!-- <td> </td>
+					<td></td>
+					<td> </td> -->
+				</tr>
+				<tr>
+					<td>
+						<p>
+							9839260
+						</p>
+					</td>
+				</tr>
+
+				<tr>
+					<!-- <td>
+									<mat-icon aria-hidden="false" aria-label="Example save icon">save_alt</mat-icon>
+									<a href="../../assets/doc/csmandcsa/Conv_9756729-CSM of 2017-08-28APPF.pdf" style="text-decoration:none" download>
+										<mat-icon aria-hidden="false" aria-label="Example save icon">save_alt</mat-icon>
+									</a>
+							</td> -->
+					<td (click)="oncilckcsm()">
+						<li id="csm" class="one">
+							Cargo Securing Manual
+						</li>
+					</td>
+
+					<td (click)="oncilckcsmapproval1()">
+						<li id="csm" class="approval">Letter</li>
+						<!-- <mat-icon aria-hidden="false" aria-label="event_note">event_note</mat-icon> -->
+
+					</td>
+				</tr>
+				<tr>
+					<!-- <td>
+									<a href="../../assets/doc/csmandcsa/Conv_1331005-CSA of 2017-07-19 (revised 2017-12-01)APPF.pdf" style="text-decoration:none"  download>
+									<mat-icon aria-hidden="false" aria-label="Example save_alt icon">save_alt</mat-icon>
+									</a>
+							</td> -->
+					<td (click)="oncilckcsa()">
+						<li id="csa" class="two">
+							Container Securing Arrangement
+						</li>
+
+
+
+					</td>
+					<td (click)="oncilckcsaapproval2()">
+						<!-- <mat-icon aria-hidden="false" aria-label="event_note">event_note</mat-icon> -->
+						<li id="csa" class="approval">Letter</li>
+					</td>
+				</tr>
+
+
+
+				<mat-divider></mat-divider>
+
+				<tr>
+					<!-- <td>
+									<mat-icon aria-hidden="false" aria-label="Example save icon">save_alt</mat-icon>
+									<a href="../../assets/doc/csmandcsa/Conv_9756729-CSM of 2017-08-28APPF.pdf" style="text-decoration:none" download>
+										<mat-icon aria-hidden="false" aria-label="Example save icon">save_alt</mat-icon>
+									</a>
+							</td> -->
+					<td (click)="onclickcer()">
+						<li id="listsymbol" class="other">
+							Certificates
+						</li>
+					</td>
+					<!-- <td  (click)="oncilckcsmapproval1()">
+								
+										<mat-icon aria-hidden="false" aria-label="event_note">event_note</mat-icon>
+									</td> -->
+				</tr>
+
+				<tr>
+					<!-- <td>
+									<mat-icon aria-hidden="false" aria-label="Example save icon">save_alt</mat-icon>
+									<a href="../../assets/doc/csmandcsa/Conv_9756729-CSM of 2017-08-28APPF.pdf" style="text-decoration:none" download>
+										<mat-icon aria-hidden="false" aria-label="Example save icon">save_alt</mat-icon>
+									</a>
+							</td> -->
+					<td (click)="oncilckoi()">
+						<li id="listsymbol" class="other">
+							Operating instructions
+						</li>
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td (click)="onclickosp()">
+						<li id="listsymbol" class="other">
+							Order spare parts
+						</li>
+					</td>
+
+				</tr>
+				<mat-divider></mat-divider>
+				<tr>
+					<td (click)="generalInfo()">
+						<li id="readme">Read me</li>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="col-2">
+
+		</div>
+		<!-- #order are fixe -->
+		<div class="col-3" id="pdfframe">
+			<!-- <embed id="epdf1" src="../../assets/doc/mscMina/Cargo Securing Manual/Conv_9839260-CSM of 2019-03-12APPF.pdf?pagemode=bookmarks"> -->
+			<!-- <object id="epdf1" src="../../assets/doc/mscMina/Cargo Securing Manual/Conv_9839260-CSM of 2019-03-12APPF.pdf" > </object> -->
+			<iframe id="epdf1"
+				src="../../assets/doc/mscMina/Cargo Securing Manual/Conv_9839260-CSM of 2019-03-12APPF.pdf"></iframe>
+			<iframe id="epdf2"
+				src="../../assets/doc/mscMina/Container Securing Arrangement/Conv_1331010-CSA of 2019-07-05APPF.pdf"></iframe>
+			<iframe id="eapp1"
+				src="../../assets/doc/mscMina/Cargo Securing Manual/Approval_Letter_DMe1d2de.pdf"></iframe>
+			<iframe id="eapp2"
+				src="../../assets/doc/mscMina/Container Securing Arrangement/Approval_Letter_DMe4b16c.pdf"></iframe>
+
+			<!-- <img src="../../assets/doc/mscMina/Container Securing Arrangement/Approval_Letter_DMe4b16c.pdf" alt=""> -->
+
+			<iframe id="cer" src="../../assets/doc/mscMina/Certificates/MSC Mina Certificates.pdf"></iframe>
+			<iframe id="oi"
+				src="../../assets/doc/mscMina/Operating and Maintenance Instructions/1331010 OPS.pdf"></iframe>
+			<iframe id="osp" src="../../assets/doc/mscMina/Order spare parts/1331010-Order Spare Parts.pdf"> </iframe>
+
+		</div>
+		<div class="col-4">
+
+		</div>
+	</div>
+
+
+	<div id="contact">
+		If you have any questions related to documents, please contact:
+		<a href="mailto:lashingsalesorder@macgregor.com?Subject=Spare Parts inquiry-DCSM"
+			target="_blank">lashingsalesorder@macgregor.com</a> <br>
+		Alternatively contact your nearest MacGregor Marine Service Office: <a href="https://www.macgregor.com"
+			target="_blank"> www.macgregor.com</a>
+	</div>
+
+</body>
